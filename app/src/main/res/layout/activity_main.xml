@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Name" />
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/qualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"
+        android:text="Qualification" />
+
+
+    <EditText
+        android:id="@+id/textName"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:hint="" />
+
+    <!--<EditText
+        android:id="@+id/textAge"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@+id/textName"
+        android:editable="false"
+        android:hint=""/>-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="40dp"></Spinner>
+
+    <EditText
+        android:id="@+id/textQualification"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textQualification"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="114dp"
+        android:background="#48D1CC"
+        android:text="Save" />
+
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qualification"
+        android:layout_alignParentRight="false"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="113dp"
+        android:background="#48D1CC"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/nameResult"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textQualification"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="185dp"
+        android:layout_marginBottom="415dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/ageResult"
+        android:layout_width="120dp"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textQualification"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="268dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/qualificationResult"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textQualification"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginBottom="274dp"
+        android:background="@color/colorAccent" />
+
+
+
+</RelativeLayout>
